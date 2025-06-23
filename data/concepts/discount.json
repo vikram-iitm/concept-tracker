@@ -1,0 +1,1 @@
+{"name": "Discount", "examples": ["You can save 10% today.", "Discounts are available on orders above \u20b91000", "We have discounts on select items.", "This product is on sale.", "Special price available this week."], "model_path": "models/discount_model.pkl"}
