@@ -10,6 +10,11 @@ from sklearn.linear_model import LogisticRegression
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
 import nltk
+try:
+    nltk.data.find("tokenizers/punkt")
+except LookupError:
+    nltk.download("punkt")
+
 nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
 
