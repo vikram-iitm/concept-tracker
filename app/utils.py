@@ -10,14 +10,15 @@ from sklearn.linear_model import LogisticRegression
 embedder = SentenceTransformer("all-MiniLM-L6-v2")
 
 import nltk
+
+nltk.data.path.append("./nltk_data")
+
 try:
     nltk.data.find("tokenizers/punkt")
 except LookupError:
-    nltk.download("punkt")
+    nltk.download("punkt", download_dir="./nltk_data")
 
-nltk.download('punkt')
 from nltk.tokenize import sent_tokenize
-
 def load_transcript(file):
     content = file.read().decode("utf-8")
     # Break into proper sentences using punctuation
