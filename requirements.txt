@@ -1,10 +1,10 @@
 streamlit
-torch==2.0.1
-sentence-transformers==2.2.2
+sentence-transformers
 transformers
 openai
 pandas
 scikit-learn
 numpy
 tqdm
+
 
