@@ -1,10 +1,9 @@
 streamlit
+pandas
+scikit-learn
 sentence-transformers
 transformers
 openai
-pandas
-scikit-learn
 numpy
 tqdm
-
-
+torch==2.5.1
